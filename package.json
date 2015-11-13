@@ -1,0 +1,46 @@
+{
+  "name": "jspm-marionette-gmdl-skeleton",
+  "private": true,
+  "version": "0.0.1",
+  "description": "jspm marionette gmdl skeleton",
+  "author": "Xxx Yyy <x@y.zz>",
+  "engines": {
+    "node": ">= 4.2",
+    "npm": ">= 3.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.10.0",
+    "gulp": "^3.9.0",
+    "gulp-cached": "^1.1.0",
+    "gulp-shell": "^0.5.1",
+    "jspm": "^0.15.7"
+  },
+  "jspm": {
+    "directories": {
+      "baseURL": "src",
+      "packages": "jspm_packages"
+    },
+    "configFile": "config.js",
+    "dependencies": {
+      "Modernizr/Modernizr": "github:Modernizr/Modernizr@^3.2.0",
+      "backbone": "npm:backbone@^1.2.3",
+      "components/jquery": "github:components/jquery@^2.1.4",
+      "forresto/system-coffee": "github:forresto/system-coffee@^0.1.2",
+      "gmac/backbone.epoxy": "github:gmac/backbone.epoxy@master",
+      "johnsoftek/plugin-jade": "github:johnsoftek/plugin-jade@^0.5.1",
+      "lodash": "npm:lodash@^3.10.1",
+      "marionettejs/backbone.babysitter": "github:marionettejs/backbone.babysitter@^0.1.10",
+      "marionettejs/backbone.marionette": "github:marionettejs/backbone.marionette@^2.4.3",
+      "marionettejs/backbone.wreqr": "github:marionettejs/backbone.wreqr@^1.3.5",
+      "material-design-lite": "github:google/material-design-lite@^1.0.6",
+      "sass": "github:mobilexag/plugin-sass@^0.0.10",
+      "shannonmoeller/reset-css": "github:shannonmoeller/reset-css@^2.0.2011012602",
+      "systemjs/plugin-css": "github:systemjs/plugin-css@^0.1.19"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.1.13",
+      "babel-runtime": "npm:babel-runtime@^5.1.13",
+      "core-js": "npm:core-js@^0.9.4"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>jspm marionette gmdl skeleton</title>
+<!--    <link type="text/css" rel="stylesheet" href="/css/styles.css">-->
+<!--    <link type="text/css" rel="stylesheet" href="/material-design-lite/material.css">-->
+    <script src="/jspm_packages/system.js"></script>
+    <script src="/config.js"></script>
+    <script>
+      System.import('material-design-lite/material.css!').then(() => {
+        System.import('./main.coffee!').catch(console.log.bind(console));
+      });
+    </script>
+
+</head>
+<body>
+
+  <div id="app-viewport"></div>
+
+</body>
+</html>
