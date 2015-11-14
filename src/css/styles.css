@@ -1,0 +1,49 @@
+.app-viewport {
+  width: 1200px;
+  margin: 0 auto 
+}
+.mdl-cell {
+  box-sizing: border-box;
+  /*background-color: #BDBDBD;*/
+  height: 100px;
+  padding: 10px;
+  color: white;
+}
+
+/* header */
+.b-header {
+  
+}
+.b-header .mdl-cell {
+  background-color: #6D4C41;
+}
+.mdl-cell.__logo {
+  /*color: #3E2723;*/
+}
+
+
+/* content */
+.b-content.mdl-grid {
+  margin-top: 50px;
+}
+.b-content .mdl-cell.__info {
+  /*color: #3E2723;*/
+}
+
+.b-content .mdl-grid.__content {
+  padding-top: 0;
+  padding-right: 0;
+}
+
+.mdl-grid.__content .mdl-cell--12-col {
+  margin-top: 0;
+  padding-right: 0;
+  margin-right: 0;
+  width: 100%;
+}
+
+
+/* footer */
+.b-footer {
+  margin-top: 20px;
+}

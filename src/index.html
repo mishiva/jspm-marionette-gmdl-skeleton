@@ -4,8 +4,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>jspm marionette gmdl skeleton</title>
-<!--    <link type="text/css" rel="stylesheet" href="/css/styles.css">-->
-<!--    <link type="text/css" rel="stylesheet" href="/material-design-lite/material.css">-->
+    <link type="text/css" rel="stylesheet" href="/css/styles.css">
+    <!-- <link type="text/css" rel="stylesheet" href="/material-design-lite/material.css"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="/jspm_packages/system.js"></script>
     <script src="/config.js"></script>
     <script>
@@ -16,6 +17,42 @@
 
 </head>
 <body>
+  <div class="app-viewport">
+    <!-- header -->
+    <div class='mdl-grid mdl-grid--no-spacing b-header'>
+      <div class="mdl-cell mdl-cell--4-col __logo mdl-color--brown-50 mdl-color-text--grey-800">
+        Main Logo
+      </div>
+      <div class="mdl-cell mdl-cell--8-col mdl-color-text--grey-200"></div>
+    </div>
+
+    <!-- content -->
+    <div class='mdl-grid mdl-grid--no-spacing b-content'>
+      <div class="mdl-cell mdl-cell--4-col __info mdl-color--brown-50 mdl-color-text--grey-800">
+        Left block
+      </div>
+      <div class="mdl-cell mdl-cell--8-col __content mdl-grid ">
+        <div class="mdl-cell mdl-cell--12-col mdl-color--brown-50 mdl-color-text--grey-800">
+          Main content
+        </div>
+
+      </div>
+    </div>
+    
+    <!-- footer -->
+    <footer class="mdl-mini-footer b-footer">
+      <div class="mdl-mini-footer__left-section">
+        <div class="mdl-logo">Footer logo</div>
+      </div>
+      <div class="mdl-mini-footer__right-section">
+        <ul class="mdl-mini-footer__link-list">
+          <li><a href="#">Help</a></li>
+          <li><a href="#">Privacy & Terms</a></li>
+        </ul>
+      </div>
+    </footer>
+
+  </div>
 
   <div id="app-viewport"></div>
 
