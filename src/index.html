@@ -17,42 +17,148 @@
 
 </head>
 <body>
-  <div class="app-viewport">
-    <!-- header -->
-    <div class='mdl-grid mdl-grid--no-spacing b-header'>
-      <div class="mdl-cell mdl-cell--4-col __logo mdl-color--brown-50 mdl-color-text--grey-800">
-        Main Logo
-      </div>
-      <div class="mdl-cell mdl-cell--8-col mdl-color-text--grey-200"></div>
-    </div>
+  <div class="mdl-layout__container">
+    <div class="mdl-layout mdl-js-layout">
+      <div class="mdl-layout__content">
+        <div class="app-content">
 
-    <!-- content -->
-    <div class='mdl-grid mdl-grid--no-spacing b-content'>
-      <div class="mdl-cell mdl-cell--4-col __info mdl-color--brown-50 mdl-color-text--grey-800">
-        Left block
-      </div>
-      <div class="mdl-cell mdl-cell--8-col __content mdl-grid ">
-        <div class="mdl-cell mdl-cell--12-col mdl-color--brown-50 mdl-color-text--grey-800">
-          Main content
-        </div>
+          <!-- header -->
+          <div class='mdl-grid mdl-grid--no-spacing b-header'>
+            <div class="mdl-cell mdl-cell--4-col __logo mdl-color--brown-50 mdl-color-text--grey-800">
+              Main Logo
+            </div>
+            <div class="mdl-cell mdl-cell--8-col mdl-color--brown-600 mdl-color-text--grey-200">
+              <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored b-exit-btn">Exit</button>
+            </div>
+          </div>
 
-      </div>
-    </div>
-    
-    <!-- footer -->
-    <footer class="mdl-mini-footer b-footer">
-      <div class="mdl-mini-footer__left-section">
-        <div class="mdl-logo">Footer logo</div>
-      </div>
-      <div class="mdl-mini-footer__right-section">
-        <ul class="mdl-mini-footer__link-list">
-          <li><a href="#">Help</a></li>
-          <li><a href="#">Privacy & Terms</a></li>
-        </ul>
-      </div>
-    </footer>
+          <!-- content -->
+          <div class='mdl-grid mdl-grid--no-spacing b-content'>
 
-  </div>
+            <div class="mdl-cell mdl-cell--4-col __info mdl-color--brown-50 mdl-color-text--grey-800">
+              Left block
+            </div>
+
+            <div class="mdl-cell mdl-cell--8-col __content mdl-grid">
+              <div class="mdl-cell mdl-cell--12-col mdl-color--brown-50 mdl-color-text--grey-800 main-content-cell">
+                Main content
+
+                <!-- table exapmple -->
+                  <table class="b-table mdl-data-table mdl-js-data-table">
+                    <thead>
+                      <tr class='mdl-color--green-600'> <!-- green -->
+                        <th class="mdl-data-table__cell--non-numeric">Name</th>
+                        <th class="mdl-data-table__cell--non-numeric">Nickname</th>
+                        <th>Age</th>
+                        <th class="mdl-data-table__cell--non-numeric">Living?</th>
+                      </tr>
+                    </thead>
+                    <tbody> <!-- inputs start -->
+                      <tr>
+                        <td class="mdl-data-table__cell--non-numeric">
+                          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                            <input class="mdl-textfield__input" type="text" id="sample3">
+                            <label class="mdl-textfield__label" for="sample3">Text...</label>
+                          </div>
+                        </td>
+                        <td class="mdl-data-table__cell--non-numeric">
+                          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample4">
+                            <label class="mdl-textfield__label" for="sample4">Number...</label>
+                            <span class="mdl-textfield__error">Input is not a number!</span>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+                            <label class="mdl-button mdl-js-button mdl-button--icon" for="sample6">
+                              <i class="material-icons">search</i>
+                            </label>
+                            <div class="mdl-textfield__expandable-holder">
+                              <input class="mdl-textfield__input" type="text" id="sample6">
+                              <label class="mdl-textfield__label" for="sample-expandable">Expandable Input</label>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="mdl-data-table__cell--non-numeric">
+                          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                            <input class="mdl-textfield__input" type="text" id="sample5">
+                            <label class="mdl-textfield__label" for="sample5">Text...</label>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody><!-- inputs end -->
+                  </table>
+
+
+                  <table class="b-table mdl-data-table mdl-js-data-table">
+                    <tbody>
+                      <tr>
+                        <td class="mdl-data-table__cell--non-numeric">John Lennon</td>
+                        <td class="mdl-data-table__cell--non-numeric">The smart one</td>
+                        <td>40</td>
+                        <td class="mdl-data-table__cell--non-numeric">No</td>
+                      </tr>
+                      <tr class='mdl-color--blue-100'> <!-- blue -->
+                        <td class="mdl-data-table__cell--non-numeric">Paul McCartney</td>
+                        <td class="mdl-data-table__cell--non-numeric">The cute one</td>
+                        <td>73</td>
+                        <td class="mdl-data-table__cell--non-numeric">Yes</td>
+                      </tr>
+                      <tr>
+                        <td class="mdl-data-table__cell--non-numeric">George Harrison</td>
+                        <td class="mdl-data-table__cell--non-numeric">The shy one</td>
+                        <td>58</td>
+                        <td class="mdl-data-table__cell--non-numeric">No</td>
+                      </tr>
+                      <tr>
+                        <td class="mdl-data-table__cell--non-numeric">Ringo Starr</td>
+                        <td class="mdl-data-table__cell--non-numeric">The funny one</td>
+                        <td>74</td>
+                        <td class="mdl-data-table__cell--non-numeric">Yes</td>
+                      </tr>
+                      <tr class='mdl-color--red-600'> <!-- red -->
+                        <td class="mdl-data-table__cell--non-numeric">Ringo Starr</td>
+                        <td class="mdl-data-table__cell--non-numeric">The funny one</td>
+                        <td>74</td>
+                        <td class="mdl-data-table__cell--non-numeric">Yes</td>
+                      </tr>
+                      <tr class='mdl-color--grey-400'> <!-- grey -->
+                        <td class="mdl-data-table__cell--non-numeric">Ringo Starr</td>
+                        <td class="mdl-data-table__cell--non-numeric">The funny one</td>
+                        <td>74</td>
+                        <td class="mdl-data-table__cell--non-numeric">Yes</td>
+                      </tr>
+                      <tr class='mdl-color--grey-400 mdl-color-text--red-600'> <!-- grey color red -->
+                        <td class="mdl-data-table__cell--non-numeric">Ringo Starr</td>
+                        <td class="mdl-data-table__cell--non-numeric">The funny one</td>
+                        <td>74</td>
+                        <td class="mdl-data-table__cell--non-numeric">Yes</td>
+                      </tr>
+                    </tbody>
+                  </table> <!-- table exapmple end -->
+
+              </div> <!-- main-content-cell -->
+
+            </div> <!-- __content mdl-grid -->
+          </div> <!-- b-content -->
+          
+          <!-- footer -->
+          <footer class="mdl-mini-footer b-footer">
+            <div class="mdl-mini-footer__left-section">
+              <div class="mdl-logo">Footer logo</div>
+            </div>
+            <div class="mdl-mini-footer__right-section">
+              <ul class="mdl-mini-footer__link-list">
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Privacy & Terms</a></li>
+              </ul>
+            </div>
+          </footer>
+        
+        </div> <!-- app-content -->
+      </div> <!-- mdl-layout__content -->
+    </div> <!-- mdl-layout mdl-js-layout -->
+  </div> <!-- mdl-layout__container -->
 
   <div id="app-viewport"></div>
 
