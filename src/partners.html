@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>jspm marionette gmdl skeleton</title>
+    <link type="text/css" rel="stylesheet" href="/css/partners.css">
+    <!-- <link type="text/css" rel="stylesheet" href="/material-design-lite/material.css"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="/jspm_packages/system.js"></script>
+    <script src="/config.js"></script>
+
+    <!-- ADD GMDL SCRIPT -->
+    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
+    <!-- ADD GMDL SCRIPT -->
+
+    <script>
+      System.import('material-design-lite/material.css!').then(() => {
+        System.import('./main.coffee!').catch(console.log.bind(console));
+      });
+    </script>
+
+</head>
+<body>
+  <div class="mdl-layout__container">
+    <div class="mdl-layout mdl-js-layout">
+      <div class="mdl-layout__content">
+        <div class="app-content">
+          <header class="b-header mdl-layout__header mdl-layout__header--scroll">
+              
+              <!-- top grey part with referrer input -->
+              <div class="mdl-layout__header-row mdl-color--grey-300">
+                <div class="b-grid">
+                  <div class="mdl-textfield mdl-js-textfield b-referrer-link">
+                    <input class="mdl-textfield__input" type="text" id="sample1">
+                    <label class="mdl-textfield__label" for="sample1">http://referrer.ru/referrer/?invite=12345678</label>
+                  </div>
+                </div>
+              </div>
+
+              <!-- top light grey menu + user profile -->
+              <div class="mdl-layout__header-row mdl-color--grey-50">
+                <div class="b-grid mdl-layout__header-row mdl-color-text--brown-900">
+                  <div class="mdl-logo mdl-color-text--brown-900">Logo</div>
+                  <div class="mdl-layout-spacer"></div>
+                  <nav class="mdl-navigation">
+                    <a class="mdl-navigation__link mdl-color-text--brown-900" href="">Link</a>
+                    <a class="mdl-navigation__link mdl-color-text--brown-900" href="">Link</a>
+                    <a class="mdl-navigation__link mdl-color-text--brown-900" href="">Link</a>
+                    <a class="mdl-navigation__link mdl-color-text--brown-900" href="">Link</a>
+                  </nav>
+                  <div class="mdl-layout-spacer"></div>
+                  <img class='user-avatar' src="https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg?sz=50" alt="">
+                  <button id="demo-menu-lower-left" class="mdl-button mdl-js-button mdl-button--icon">
+                    <i class="material-icons">more_vert</i>
+                  </button>
+                  <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+                      for="demo-menu-lower-left">
+                    <li class="mdl-menu__item">User Info</li>
+                    <li class="mdl-menu__item">Another Action</li>
+                    <li disabled class="mdl-menu__item">Disabled Action</li>
+                    <li class="mdl-menu__item">Exit</li>
+                  </ul>
+                </div>
+              </div>
+
+
+              <!-- center blue header with info card -->
+              <div class="mdl-layout__header-row mdl-color--light-blue-400 mdl-shadow--4dp b-header-info">
+                <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title">
+                    <h2 class="mdl-card__title-text">Welcome</h2>
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Mauris sagittis pellentesque lacus eleifend lacinia...
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                      Get Started
+                    </a>
+                  </div>
+                  <div class="mdl-card__menu">
+                    <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+                      <i class="material-icons">share</i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- main blue header menu -->
+              <div class="mdl-layout__header-row mdl-color--light-blue-200 mdl-shadow--2dp">
+                <nav class="b-grid mdl-navigation b-main-nav">
+                  <a class="mdl-navigation__link" href="">Статистика</a>
+                  <a class="mdl-navigation__link __active" href="">Материалы</a>
+                  <a class="mdl-navigation__link" href="">Выплата</a>
+                  <a class="mdl-navigation__link" href="">Правила</a>
+                </nav>
+              </div>
+
+          </header>
+
+          <!-- main content -->
+          <section class="b-grid b-content mdl-grid mdl-shadow--2dp mdl-grid--no-spacing">
+            <div class="mdl-cell--12-col">
+              Main Content
+            </div>
+          </section>
+
+
+          <!-- footer -->
+          <footer class="mdl-mega-footer b-footer">
+            <!-- footer menu -->
+            <div class="mdl-mega-footer__middle-section b-grid">
+              
+              <div class="mdl-mega-footer__drop-down-section">
+                <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+                <h1 class="mdl-mega-footer__heading">Features</h1>
+                <ul class="mdl-mega-footer__link-list">
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Terms</a></li>
+                  <li><a href="#">Partners</a></li>
+                  <li><a href="#">Updates</a></li>
+                </ul>
+              </div>
+              <div class="mdl-mega-footer__drop-down-section">
+                <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+                <h1 class="mdl-mega-footer__heading">Details</h1>
+                <ul class="mdl-mega-footer__link-list">
+                  <li><a href="#">Specs</a></li>
+                  <li><a href="#">Tools</a></li>
+                  <li><a href="#">Resources</a></li>
+                </ul>
+              </div>
+              <div class="mdl-mega-footer__drop-down-section">
+                <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+                <h1 class="mdl-mega-footer__heading">Details</h1>
+                <ul class="mdl-mega-footer__link-list">
+                  <li><a href="#">Specs</a></li>
+                  <li><a href="#">Tools</a></li>
+                  <li><a href="#">Resources</a></li>
+                </ul>
+              </div>
+            </div><!-- footer menu end -->
+
+            <!-- bottom copyrights -->
+            <div class="mdl-mega-footer__bottom-section b-grid">
+              <div class="mdl-mega-footer__drop-down-section">
+                <p>
+                  Footer copyrigths
+                </p>
+              </div>
+              <div class="mdl-mega-footer__drop-down-section mdl-color-text--grey-100">
+                <div class="mdl-typography--font-medium">8 (800) 2000-600</div>
+                <div class="mdl-typography--font-medium">8 (800) 2000-600</div>
+              </div>
+            </div>
+
+          </footer>
+        
+        </div> <!-- app-content -->
+      </div> <!-- mdl-layout__content -->
+    </div> <!-- mdl-layout mdl-js-layout -->
+  </div> <!-- mdl-layout__container -->
+
+  <div id="app-viewport"></div>
+
+</body>
+</html>
